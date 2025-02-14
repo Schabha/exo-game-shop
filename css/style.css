@@ -1,0 +1,279 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+    scrollbar-color:#5eff01 #070558 ;
+    
+}
+
+/* recurrents */
+.card{
+width: 300px;
+margin: 10px;
+height:300px;
+border-radius: 15px;
+background-position: center top;
+background-size: cover;
+transition: all .5s ease-in-out
+}
+
+.card:hover{
+    background-color:rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+
+
+}
+
+.comment{
+    display:none;
+    height:100%;
+    width:100%;
+    padding:0 10%;
+    color:white;
+    
+}
+.comment>p{
+    color:rgba(245, 245, 245, 0.8);
+}
+
+.comment h2{
+    text-transform: uppercase;
+    font-size:1.3em;
+}
+
+.card:hover .comment{
+    display:block;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:self-start;
+}
+
+.CTA{
+    color:whitesmoke;
+    text-decoration: none;
+    padding:5px 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    align-self: flex-end;
+    align-items: flex-end;
+transition:all .5s ease-in-out;
+}
+
+.CTA:hover{
+    background-color: whitesmoke;
+    color: #070558;
+}
+/* nav */
+nav{
+    padding:20px 3%;
+    display:flex;
+    flex-direction: row;
+background-color: #010018;
+}
+
+nav ul{
+width:100%;
+display:flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 1.2em;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition:all .5s ease-in-out;
+    display:inline-block;
+    position:relative;
+}
+
+nav ul li a:hover{
+    outline: 0;
+}
+
+nav ul li a:hover:before {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+  }
+
+  nav ul li a:before {
+    content: "";
+    position: absolute;
+    bottom: -.3rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 15px;
+    background: currentColor;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition: -webkit-transform .8s cubic-bezier(.19,1,.22,1);
+    transition: -webkit-transform .8s cubic-bezier(.19,1,.22,1);
+    -o-transition: transform .8s cubic-bezier(.19,1,.22,1);
+    transition: transform .8s cubic-bezier(.19,1,.22,1);
+    transition: transform .8s cubic-bezier(.19,1,.22,1),-webkit-transform .8s cubic-bezier(.19,1,.22,1);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+
+.logo{
+    display:flex;
+    flex-direction: row;
+}
+ .logo h1{
+    align-self: center;
+ }
+.logo h1 a{
+    color: white;
+    font-size: 1.2em;
+    margin-right: 10px;
+    margin-left:20px;
+    
+    text-decoration: none;
+}
+.logo>a>img{
+    width:40px;
+    height:auto;
+}
+
+/* main */
+main{
+    padding:0 10%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:#070558;
+    padding-bottom:90px;
+    padding-top:50px;
+    justify-content: center;
+}
+
+.elden-ring{
+    background-image: url(../img/elden-ring.jpg);
+   
+}
+.palworld{
+    background-image: url(../img/palworld.jpg);
+   
+}
+.cofbo6{
+    background-image: url(../img/coa-bo6.jpg);
+   
+}
+.horizon{
+    background-image: url(../img/horizon.jpg);
+   
+}
+.mariokart{
+    background-image: url(../img/mariokart8.jpg);
+   
+}
+
+.sims4{
+    background-image: url(../img/sims4.jpg);
+   
+}
+ .assassin{
+    background-image: url(../img/assassins-creed.jpg);
+ }
+ .godofwar{
+    background-image: url(../img/god-of-war.jpg);
+ }
+ .lou2{
+    background-image: url(../img/last-of-us-2.jpg);
+ }
+ .zelda{
+    background-image: url(../img/zelda.jpg);
+ }
+.gta{
+    background-image: url(../img/gta.jpg);
+}
+.cyberpunk{
+    background-image: url(../img/cyberpunk.jpg);
+}   
+.metro {
+    background-image: url(../img/metro-exodus.jpg);
+}
+.jedi{
+    background-image: url(../img/sw-fallen-order.jpg);
+}
+.animal{
+    background-image: url(../img/animal-crossing.jpg);
+}
+.dbz{
+    background-image: url(../img/dbz.jpg);
+}            
+.genshin{
+    background-image: url(../img/genshin-impact.jpg);
+}
+.justdance{
+    background-image: url(../img/just-dance-2024.jpg);
+}
+.fifa23{
+    background-image: url(../img/fifa23.jpg);
+}
+.days{
+    background-image: url(../img/days-gone.jpg);
+}
+
+/* footer */
+footer{
+    background-color:#010018;
+    color: white;
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+footer .mark p{
+    font-size: 1.5em;
+    vertical-align: center;
+}
+
+footer .rs a:hover img{
+    transform: scale(1.2);
+}
+
+/* responsive */
+@media screen and (max-width: 1201px) {
+nav{
+    flex-direction: column;
+    align-items: center;
+
+}
+
+nav ul{
+    flex-direction: column;
+    align-items: center;
+}
+nav ul li{
+    margin: 10px 0;
+}
+}
+
+@media screen and (max-width: 1201px)
